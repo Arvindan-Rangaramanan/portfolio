@@ -278,12 +278,14 @@ html {
 }
 
 .project-code {
-    justify-content: center;
+    flex-flow: column;
+    align-items: center;
     margin-top: .25rem;
+
 }
 
 .project-code > a{
-    width: auto;
+    width: fit-content;
     text-decoration: none;    
     font-weight: 500;
     color: #14213d;
@@ -291,7 +293,7 @@ html {
     padding: 8px;
     border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    margin: 1rem;
 }
 
 .project-code > a > * {
@@ -315,7 +317,7 @@ html {
 .project-wrapper {
     padding: 3rem 1rem;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 .project-wrapper > * {
@@ -329,6 +331,7 @@ html {
 .project-img img {
     height: 300px;
     width: auto;
+    
 }
 
 .project-details {
@@ -351,11 +354,21 @@ html {
     text-align: left;
 }
 
-.project-tech {
+.project-tech{
+    margin: -.25rem;
+
+}
+
+.project-tech > img {
+   
+    
     
 }
 
 .project-code {
+    margin-left: -1rem;
+    flex-flow: row wrap;
+    
     
 }
 
