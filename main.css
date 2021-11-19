@@ -1,0 +1,436 @@
+/* font-family: 'Chakra Petch', sans-serif;
+font-family: 'Space Mono', monospace; */
+
+html {
+    width: 100%;
+    
+}
+
+#mainpage {
+    height: 100vh;
+    padding: 2rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14213d;
+}
+
+.mainpage-header {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;    
+}
+
+.mainpage-header img {
+    padding-left: 1rem;
+    filter: brightness(0) invert(1);
+    height: 20px;
+    width: auto;
+}
+
+.resume {
+    margin-top: 3.5px;
+}
+
+.github-text{
+    display: none;
+}
+
+.resume-text {
+    display: none;
+}
+
+
+.mainpage-details {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mainpage-img img{
+    height: 200px;
+    width: auto;
+
+}
+
+.mainpage-name{
+    margin-top: -1rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 30px;
+    color: white;
+}
+
+.mainpage-position{
+    margin-top: -2rem;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.mainpage-works{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    color: #fca311;
+    line-height: 10px;
+}
+
+.mainpage-works > a {
+    text-decoration: none;
+    color: #fca311;
+    text-align: center;
+}
+
+.mainpage-works > a:hover {
+    color: white;
+}    
+
+@media (min-width:768px) {
+
+.mainpage-details {
+    
+}
+
+.mainpage-name{
+    font-size: 45px;
+    line-height: 38px;
+}
+
+
+    
+.mainpage-position {
+    padding-top: 2rem;
+    font-size: 20px;
+}
+
+.mainpage-works{
+    font-size: x-large;
+    line-height: 20px;
+}
+    
+}
+
+@media (min-width:1020px){
+
+#mainpage{
+    height: 100vh;
+    padding: 1rem;
+}
+
+.mainpage-header {
+    margin: 0;
+    padding: 0;    
+}
+
+
+.header-elements {
+    width: 200px;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.github{
+    display: none;
+}
+
+.resume {
+    display: none;
+}
+
+.github-text{
+    display: block; 
+    
+}
+
+.resume-text {
+    display: block;
+    
+}
+
+.mainpage-header a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    
+    width: max-content;
+}
+
+.mainpage-header a:hover {
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid #fca311 ;
+
+}
+
+.mainpage-details{
+    justify-content: space-around;
+}
+
+.mainpage-img img {
+    width: auto;
+    height: 200px;
+}
+
+.mainpage-name {
+    letter-spacing: .15rem;
+    margin-top: 2rem;
+    font-size: 4rem;
+    line-height: 50px;
+    
+}
+
+.mainpage-position {
+    font-size: 1.25rem;
+    
+}
+
+.mainpage-works{
+    margin-top: 1rem;
+    line-height: 20px;
+}
+
+
+}
+
+
+
+/* works page */
+
+#workpage {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+}
+
+.project-wrapper {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.project-wrapper > * {
+    padding: .25rem 0rem;
+}
+
+.project-img {
+    display: flex;
+    justify-content: space-around;  
+}
+
+.project-img img{
+    height: 150px;
+    width: auto;
+    border-radius: 1rem;
+}
+
+.project-details {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.project-details > * {
+    display: flex;
+    padding: .35rem 0rem;
+    color: #14213d;
+}
+
+.project-title {
+    font-family: 'Chakra Petch', sans-serif;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.project-description {
+    font-family: 'Space Mono', monospace;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.project-tech {
+    justify-content: center;
+}
+
+.project-tech > * {
+    padding: 0px 5px ;
+}
+
+.project-code {
+    justify-content: center;
+    margin-top: .25rem;
+}
+
+.project-code > a{
+    width: auto;
+    text-decoration: none;    
+    font-weight: 500;
+    color: #14213d;
+    background-color: #fca311;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-code > a > * {
+    padding: 0px 5px;
+}
+
+.project-code > a:hover {
+    color: #fca311;
+    background-color: #14213d;
+    /* box-shadow: 5px 2px 2px #101725; */
+
+}
+
+.project-code > a:hover > img {
+    filter: brightness(0) invert(1);
+}
+
+
+@media (min-width:1020px) {
+
+.project-wrapper {
+    padding: 3rem 1rem;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.project-wrapper > * {
+    padding: 0rem 2rem;
+}
+
+.project-img {
+    align-items: center;
+}
+
+.project-img img {
+    height: 300px;
+    width: auto;
+}
+
+.project-details {
+    justify-content: space-around;
+}
+
+.project-details > * {
+    justify-content: start;
+}
+
+.project-title {
+    
+    font-size: 2.5rem;
+    
+}
+
+.project-description{
+    font-size: 18px;
+    margin-top: -1.5rem;
+    text-align: left;
+}
+
+.project-tech {
+    
+}
+
+.project-code {
+    
+}
+
+
+}
+
+/* footer area */
+
+#footer-area {
+    height: auto;
+    width: 100%;
+    background-color: #14213d;
+}
+
+.footer-wrapper {
+    padding: 1rem .5rem;
+}
+
+.footer-wrapper > * {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1rem .25rem;
+}
+
+.footer-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.footer-links > .link {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.link a {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.link a:hover {
+    color: white;
+    border-bottom: 2px solid #fca311;
+}
+
+
+@media (min-width:1020px) {
+
+.footer-wrapper{
+    padding: 4rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footer-wrapper > *{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer-links {
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.link {
+    margin: 1rem 2rem;
+}
+    
+}
