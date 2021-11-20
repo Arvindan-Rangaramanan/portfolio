@@ -132,7 +132,8 @@ html {
 
 .mainpage-header {
     margin: 0;
-    padding: 0;    
+    padding: 0;   
+    margin-bottom: 2rem; 
 }
 
 
@@ -236,12 +237,14 @@ html {
 .project-img {
     display: flex;
     justify-content: space-around;  
+    
 }
 
 .project-img img{
     height: 150px;
     width: auto;
     border-radius: 1rem;
+    border: 1px solid #14213d;
 }
 
 .project-details {
@@ -262,7 +265,7 @@ html {
 }
 
 .project-description {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Space Mono', ;
     justify-content: space-around;
     text-align: center;
     font-size: 12px;
