@@ -13,7 +13,7 @@ html {
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #14213d;
+  background-color: hsl(221, 51%, 16%);
 }
 
 .mainpage-header {
@@ -157,7 +157,7 @@ html {
     text-decoration: none;
     color: white;
     font-family: 'Chakra Petch', sans-serif;
-
+    border-bottom: 1px solid hsl(221, 51%, 16%);
     width: max-content;
   }
 
